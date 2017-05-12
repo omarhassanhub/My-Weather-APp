@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome to JustWeatherForecast{% endblock %}
+
+{% block content %}
+
+<p>Welcome to JustWeatherForecast. Please select an option from the menu above</p>
+{% if user.is_authenticated %}
+<p>{{ user }} You are now logged.</p>
+    {% else %}
+
+    <p>Please login (or Register) first...</p>
+
+{% endif %}
+{%  endblock %}

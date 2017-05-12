@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Search for weather{% endblock %}
+
+{% block content %}
+
+{% if error %}
+<p style="color:red;"> {{ msg }} </p>
+<p style="color:red;">Please submit a search term.</p>
+{% endif %}
+
+<form action="/search/" method="get">
+    <input type="text" name="q"><br>
+    <input type="submit" value="Search">
+</form>
+
+{%  endblock %}

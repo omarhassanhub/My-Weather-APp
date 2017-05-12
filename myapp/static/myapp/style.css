@@ -1,0 +1,123 @@
+body {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:13px;
+color:#333;
+background:url(xad.jpg) no-repeat 0 center #FFF;
+background-size:30% 140% ;
+}
+
+
+.logo img {
+
+display: block;
+    margin-left: auto;
+    margin-right: auto;
+width:330px;
+height:100px;
+
+
+}
+#header {
+text-align:center;
+margin:auto;
+color: #E8E8E8;
+}
+
+ul.tabs
+{
+    padding: 7px 0;
+    font-size: 0;
+    margin:0;
+    list-style-type: none;
+    text-align: center;
+}
+        
+ul.tabs li
+{
+    display: inline;
+    margin: 0;
+    margin-right:3px;
+}
+        
+ul.tabs li a
+{
+    font: normal 12px Verdana;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    padding: 7px 16px;
+    border: 1px solid #CCC;
+    border-bottom-color:#B7B7B7;
+    color: #000;
+    background: #F0F0F0;
+    border-radius: 6px 6px 0px 0px;
+	-moz-border-radius: 6px 6px 0px 0px;
+    outline:none;
+}
+
+ul.tabs li a:hover
+{
+    border: 1px solid #B7B7B7;
+    background:#E0E0E0;
+}
+        
+ul.tabs li.selected a
+{
+    position: relative;
+    top: 0px;
+    font-weight:bold;
+    background: white;
+    border: 1px solid #B7B7B7;
+    border-bottom-color: white;
+}
+
+div.tabcontents
+{	width: 750px;
+	height: 450px;
+    border: 1px solid #B7B7B7; padding: 20px;
+    background-color:#FFF;
+    border-radius: 0 2px 2px 2px;
+	margin-left: auto;
+    margin-right: auto;
+	
+	
+}
+
+
+#footer{
+text-align: center;
+
+}
+
+#left{
+float:left;
+width:75%;
+overflow:hidden;
+}
+#right{
+float:right;
+width:25%;
+overflow:hidden;
+} 
+
+.searchtable td, th {
+    border: 1px solid green;
+}
+
+.searchtable th {
+    background-color: #00BFFF;
+    color: white;
+}
+
+form {
+	width: 300px;
+	margin: 0 auto;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+	height:700px;
+    
+}

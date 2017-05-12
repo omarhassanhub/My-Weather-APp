@@ -1,0 +1,48 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %} {% endblock %}</title>
+<link rel='stylesheet' type='text/css' href="{% static 'myapp/style.css' %}" />
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+</style>
+</head>
+
+
+
+
+<body>
+<title>JustWeatherForecast</title>
+<div class="center" >
+<div class="logo"><a href="#"> <img src="{% static "myapp/head.png" %}" alt="My image"/></a></div>
+<ul class="tabs">
+  <li><a href="/accounts/login/">Login</a></li>
+  <li><a href="/accounts/register/">Register</a></li>
+  <li><a href="/search-form/">Search</a></li>
+  <li><a href="/add_record/">Add Weather</a></li>
+  <li><a href="/accounts/logout/">Logout</a></li>
+</ul>
+<hr>
+{% block content %} {% endblock %}
+
+{% block footer %}
+<hr>
+{% if user.is_authenticated %}
+    <p>{{ user }} is currently logged in...</p>
+{% else %}
+    <p>Not logged in yet...</p>
+{% endif %}
+
+{% endblock %}
+</div>
+</body>
+</html>
